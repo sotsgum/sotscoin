@@ -13,7 +13,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: 'https://sotsgum.github.io/sotscoin'
+			base: process.argv.includes('dev') ? '' : '/sotscoin'
 		}
 	}
 };

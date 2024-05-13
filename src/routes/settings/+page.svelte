@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { coins, button, background } from '$lib/stores';
 
 	function reset() {
@@ -16,7 +17,7 @@
 	<div class="flex items-center gap-3 text-xl font-bold text-white">
 		<a
 			class="rounded-lg bg-white px-2 py-1 text-black transition-all duration-100 hover:scale-105"
-			href="/">{'<'}</a
+			href="{base}/">{'<'}</a
 		>
 		<span>Настройки</span>
 	</div>

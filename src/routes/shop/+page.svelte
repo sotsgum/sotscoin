@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { buttons, backgrounds } from '$lib/upgrades';
 	import { button as buttonStore, background as backgroundStore, coins } from '$lib/stores';
+	import { base } from '$app/paths';
 
 	$: btn = $buttonStore;
 	$: bg = $backgroundStore;
@@ -21,7 +22,7 @@
 		<div class="flex items-center gap-3">
 			<a
 				class="rounded-lg bg-white px-2 py-1 text-black transition-all duration-100 hover:scale-105"
-				href="/">{'<'}</a
+				href="{base}/">{'<'}</a
 			>
 			<span>Магазин</span>
 		</div>

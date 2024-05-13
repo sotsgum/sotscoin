@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { background, coins } from '$lib/stores';
 	import { backgrounds } from '$lib/upgrades';
 	import '../app.pcss';
@@ -25,7 +26,7 @@
 	<div class="absolute left-0 top-0 h-full w-full overflow-hidden">
 		<div
 			class="absolute left-0 top-0 -z-20 h-screen w-full scale-110 bg-cover bg-center blur"
-			style="background-image: url('/backgrounds/{bgImage}');"
+			style="background-image: url('{base}/backgrounds/{bgImage}');"
 		/>
 		<div class="absolute -z-10 h-full w-full bg-black/30" />
 	</div>
