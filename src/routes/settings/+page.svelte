@@ -14,7 +14,10 @@
 
 <section class="grid gap-4 p-4 md:p-8">
 	<div class="flex items-center gap-3 text-xl font-bold text-white">
-		<a class="rounded-lg bg-white px-2 py-1 text-black" href="/">{'<'}</a>
+		<a
+			class="rounded-lg bg-white px-2 py-1 text-black transition-all duration-100 hover:scale-105"
+			href="/">{'<'}</a
+		>
 		<span>Настройки</span>
 	</div>
 	<button class="rounded-lg bg-red-600 p-2 text-xl font-bold text-white" on:click={reset}
