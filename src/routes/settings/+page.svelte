@@ -8,7 +8,7 @@
 			coins.set(0);
 			button.set(1);
 			background.set(1);
-			goto('/');
+			goto(`${base}/`);
 		}
 	}
 </script>
