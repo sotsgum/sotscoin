@@ -1,5 +1,7 @@
-import adapter from '@sveltejs/adapter-static';
+import { adapter, standardGetLast } from 'sveltekit-adapter-versioned-worker';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+
+const isTestBuild = process.env.IS_TEST_BUILD === 'true';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,7 +12,11 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
+			lastInfo: standardGetLast(
+				'https://sotsgum.github.io/sotscoin/versionedWorker.json',
+				isTestBuild
+			)
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH

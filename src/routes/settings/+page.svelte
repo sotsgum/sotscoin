@@ -13,6 +13,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Настройки - Sotscoin</title>
+</svelte:head>
+
 <section class="relative mx-auto grid w-full max-w-7xl gap-4 p-4 md:p-8">
 	<div class="flex items-center gap-3 text-xl font-bold text-white">
 		<a

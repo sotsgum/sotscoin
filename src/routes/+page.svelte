@@ -6,6 +6,10 @@
 	$: btnIndex = $button ?? 1;
 </script>
 
+<svelte:head>
+	<title>Sotscoin</title>
+</svelte:head>
+
 <section
 	class="relative mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-center gap-6"
 >

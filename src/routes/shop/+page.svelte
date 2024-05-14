@@ -17,6 +17,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Магазин - Sotscoin</title>
+</svelte:head>
+
 <section
 	class="relative mx-auto grid w-full max-w-7xl gap-4 p-4 text-xl font-bold text-white md:p-8"
 >

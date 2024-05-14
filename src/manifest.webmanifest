@@ -1,0 +1,12 @@
+{
+	"icons": [],
+	"name": "Sotscoin",
+	"short_name": "Sotscoin",
+	"background_color": "#403e3b",
+	"theme_color": "#ffc24b",
+	"description": "TODO",
+	"orientation": "any",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/"
+}

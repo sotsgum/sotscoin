@@ -2,8 +2,9 @@
 	import { base } from '$app/paths';
 	import { background, coins } from '$lib/stores';
 	import { backgrounds } from '$lib/upgrades';
-	import '../app.pcss';
 	import { onMount } from 'svelte';
+	import { ServiceWorker } from 'sveltekit-adapter-versioned-worker/svelte';
+	import '../app.pcss';
 
 	$: bgImage = backgrounds.find((b) => b.index === $background)?.image ?? 'nsgk.jpg';
 	$: bgClicks = backgrounds.find((b) => b.index === $background)?.clicks ?? 0;
@@ -20,6 +21,8 @@
 
 	onMount(() => {});
 </script>
+
+<ServiceWorker></ServiceWorker>
 
 <div class="flex h-screen w-full flex-col">
 	<main class="relative z-10 flex w-full flex-1 flex-col">
