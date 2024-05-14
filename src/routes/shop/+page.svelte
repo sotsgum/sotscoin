@@ -17,7 +17,9 @@
 	}
 </script>
 
-<section class="grid gap-4 p-4 text-xl font-bold text-white md:p-8">
+<section
+	class="relative mx-auto grid w-full max-w-7xl gap-4 p-4 text-xl font-bold text-white md:p-8"
+>
 	<div class="flex items-center justify-between text-xl font-bold text-white">
 		<div class="flex items-center gap-3">
 			<a
