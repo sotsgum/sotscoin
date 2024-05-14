@@ -7,6 +7,6 @@
 	"description": "TODO",
 	"orientation": "any",
 	"display": "standalone",
-	"scope": "/sotscoin",
-	"start_url": "/sotscoin"
+	"scope": "/sotscoin/",
+	"start_url": "/sotscoin/"
 }
